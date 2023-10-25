@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='H'>H</div>
+    <br>
+    <br>
+    <input type="email" placeholder="email">
+    <br>
+    <input typr="password" placeholder="пароль">
+    <br>
+    <button>Отпарвить</button>
+    <br>
+    <br>
+    <ul>
+        <li  id="spisok1">ябеда</li>
+        <li  id="spisok2">ябеда</li>
+        <li  id="spisok3">ябеда</li>
+        <li  id="spisok4">ябеда</li>
+    </ul>
+    <div id="h"></div>
+    <script>
+        //задание 1
+        let newstr= document.querySelector('#H').innerHTML='Hello, World!';
+        
+        //задание 2
+        let p=document.createElement('p');
+        p.innerHTML="Этот текст был создан динамически";
+        document.body.append(p);
+
+        //задание 3
+        let spisok1=document.querySelector('#spisok1').remove();
+        let string='----';
+        let spisok2=document.querySelector('#spisok2').replaceWith(string);
+        let spisok3=document.querySelector('#spisok3').innerHTML='ничего';
+        let spisok4=document.querySelector('#spisok4').innerHTML='не делаю';
+        let h=document.querySelector('#h')
+        h.insertAdjacentText("afterbegin", 'пусто');
+
+        //задание 4
+        let p_1=document.createElement('p');
+        p_1.innerHTML='ура';
+        document.body.append(p_1);
+        let copy_p=p_1.cloneNode(true);
+        document.body.append(copy_p);
+    </script>
+</body>
+</html>
