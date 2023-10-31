@@ -72,12 +72,62 @@ let pDiv9=div_9.querySelector('p');
 pDiv9.textContent='Вторая по высоте вершина Южного Урала всего лишь на 58 метров ниже горы Ямантау, и именно Большой Иремель туристы посещают чаще всего. За год сюда приезжают десятки тысяч человек. Вершина относится к обособленному хребту и в прошлом считалась священной. Поднимаясь на Большой Иремель, необходимо соблюдать осторожность из-за многочисленных подвижных камней. На высоте до 1000 метров можно увидеть реликтовые ели со свисающими с веток клочками лишайников. Более 50 видов растений в этой местности занесено в Красную книгу. На вершине обычно ветрено и прохладно, снег кое-где сохраняется даже летом. В хорошую погоду окрестности видны на много километров вокруг.';
 document.body.appendChild(div_9);
 
-let div_spisok=document.createElement('div');
-let ul=document.createElement('');
-let list=[
-    {
-       ul:"<li>"+"Нургуш (1406 м)"+"</li>",
-    }
-]
-list.appendChild(list);
-document.body.append(div_spisok);
+let div_10=div_1.cloneNode(true);
+let h2Div10=div_10.querySelector("h2");
+h2Div10.textContent='Гора Качканар (878 м)';
+let imgDiv10=div_10.querySelector('img');
+imgDiv10.src='качканар.jpeg';
+let pDiv10=div_10.querySelector('p');
+pDiv10.textContent='Среди самых легкодоступных гор Качканар стоит назвать одним из первых. Как и Ослянка, он находится в Свердловской области, а у его подножия расположен город Качканар. Гора имеет вытянутую форму с двумя вершинами. Это Северный и Полуденный Рог высотой 878 и 866 метров. На обеих вершинах много останцов, у которых любят фотографироваться туристы, особенно знаменита скала Верблюд. Забраться на Качканар можно в любой сезон, здесь всегда красиво. В ясную погоду с высоты открываются хорошие виды, в тумане скалы выглядят загадочно и необыкновенно.';
+document.body.appendChild(div_10);
+
+let h3=document.createElement('h3');
+h3.textContent='Список гор:';
+document.body.append(h3);
+
+let div_spisok = document.createElement('div');
+let ul = document.createElement('ul');
+
+let list_1 = document.createElement('li');
+list_1.textContent = 'Поперечная (1389 м)';
+ul.appendChild(list_1);
+
+let list_2 = document.createElement('li');
+list_2.textContent = 'Нургуш (1406 м)';
+ul.appendChild(list_2);
+
+let list_3 = document.createElement('li');
+list_3.textContent = 'Гора Пайер (1472 м)';
+ul.appendChild(list_3);
+
+let list_4 = document.createElement('li');
+list_4.textContent = 'Гора Народная (1895 м)';
+ul.appendChild(list_4);
+
+let list_5 = document.createElement('li');
+list_5.textContent = 'Гора Манарага (1662 м)';
+ul.appendChild(list_5);
+
+let list_6 = document.createElement('li');
+list_6.textContent = 'Конжаковский Камень (1569 м)';
+ul.appendChild(list_6);
+
+let list_7 = document.createElement('li');
+list_7.textContent = 'Старик-Камень (755 м)';
+ul.appendChild(list_7);
+
+let list_8 = document.createElement('li');
+list_8.textContent = 'Ямантау (1640 м)';
+ul.appendChild(list_8);
+
+let list_9 = document.createElement('li');
+list_9.textContent = 'Большой Иремель (1582 м)';
+ul.appendChild(list_9);
+
+let list_10 = document.createElement('li');
+list_10.textContent = 'Гора Качканар (878 м)';
+ul.appendChild(list_10);
+
+div_spisok.appendChild(ul);
+
+document.body.appendChild(div_spisok);
